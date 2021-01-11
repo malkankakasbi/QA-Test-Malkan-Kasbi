@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20210111 17:05:19.829" generator="Robot 3.2.1 (Python 2.7.15 on win32)">
+<suite source="C:\development\Robot-Script\Gits\tests\List.robot" id="s1" name="List">
+<test id="s1-t1" name="List">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://gist.github.com/malkankakasbi</arg>
+<arg>ff</arg>
+</arguments>
+<msg timestamp="20210111 17:05:20.052" level="INFO">Opening browser 'ff' to base url 'https://gist.github.com/malkankakasbi'.</msg>
+<msg timestamp="20210111 17:05:20.054" level="INFO">Firefox driver log is always forced to to: C:\development\Robot-Script\Gits\results\geckodriver-1.log</msg>
+<status status="PASS" endtime="20210111 17:05:28.860" starttime="20210111 17:05:20.052"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/div[1]/div/div[5]/a[1]</arg>
+</arguments>
+<msg timestamp="20210111 17:05:28.862" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/div[5]/a[1]'.</msg>
+<status status="PASS" endtime="20210111 17:05:30.745" starttime="20210111 17:05:28.861"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210111 17:05:32.747" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20210111 17:05:32.747" starttime="20210111 17:05:30.746"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="login_field"]</arg>
+<arg>malkankasbi@gmail.com</arg>
+</arguments>
+<msg timestamp="20210111 17:05:32.749" level="INFO">Typing text 'malkankasbi@gmail.com' into text field 'xpath=//*[@id="login_field"]'.</msg>
+<status status="PASS" endtime="20210111 17:05:32.998" starttime="20210111 17:05:32.748"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210111 17:05:35.000" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20210111 17:05:35.000" starttime="20210111 17:05:33.000"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="password"]</arg>
+<arg>Gunung1995</arg>
+</arguments>
+<msg timestamp="20210111 17:05:35.003" level="INFO">Typing text 'Gunung1995' into text field 'xpath=//*[@id="password"]'.</msg>
+<status status="PASS" endtime="20210111 17:05:35.083" starttime="20210111 17:05:35.002"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210111 17:05:37.085" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20210111 17:05:37.086" starttime="20210111 17:05:35.084"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="login"]/div[3]/form/input[14]</arg>
+</arguments>
+<msg timestamp="20210111 17:05:37.089" level="INFO">Clicking element 'xpath=//*[@id="login"]/div[3]/form/input[14]'.</msg>
+<status status="PASS" endtime="20210111 17:05:38.876" starttime="20210111 17:05:37.089"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20210111 17:05:42.878" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20210111 17:05:42.879" starttime="20210111 17:05:38.876"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20210111 17:05:43.668" starttime="20210111 17:05:42.887"></status>
+</kw>
+<status status="PASS" endtime="20210111 17:05:43.668" critical="yes" starttime="20210111 17:05:20.051"></status>
+</test>
+<status status="PASS" endtime="20210111 17:05:43.671" starttime="20210111 17:05:19.831"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="List" pass="1">List</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210111 17:05:20.046" level="ERROR">Error in file 'C:\development\Robot-Script\Gits\tests\List.robot' on line 3: Importing test library 'Selenium2Library' failed: ImportError: No module named Selenium2Library
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python27\Scripts\robot.exe
+  C:\WINDOWS\SYSTEM32\python27.zip
+  c:\python27\DLLs
+  c:\python27\lib
+  c:\python27\lib\plat-win
+  c:\python27\lib\lib-tk
+  c:\python27
+  c:\python27\lib\site-packages</msg>
+</errors>
+</robot>
